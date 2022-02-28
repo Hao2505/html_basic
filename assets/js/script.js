@@ -105,6 +105,11 @@ $(".modal-quick-view-product .close-modal").click(function () {
   $(this).closest(".modal-quick-view-product").hide();
 });
 
+$(".action-forgot-password").click(function () {
+  $(this).closest(".form-login").find(".frm-login").toggle();
+  $(this).closest(".form-login").find(".frm-reset").toggle();
+});
+
 if (window.innerWidth > 991) {
   VanillaTilt.init(
     document.querySelectorAll(
